@@ -1,32 +1,60 @@
-# Findex - downloads
+<div align="center">
+  <img src="findex-icon.png" width="128" height="128" alt="Findex icon" />
+  <h1>Findex</h1>
+  <p><b>A fast, extensible file explorer for macOS.</b></p>
+  <p>
+    <a href="https://github.com/serfom256/findex-downloads/releases/latest/download/Findex-macos.dmg">⬇&nbsp;&nbsp;Download for macOS (Apple Silicon)</a>
+  </p>
+  <p><sub>Current version: 0.4.0 · Free beta</sub></p>
+</div>
 
-Official downloads for **Findex**, a fast, hackable file explorer for macOS.
-
-## Download
-
-**[⬇ Download for macOS (Apple Silicon)](https://github.com/serfom256/findex-downloads/releases/latest/download/Findex-macos.dmg)**
-
-…or pick a version from the [Releases page](https://github.com/serfom256/findex-downloads/releases).
-
-> **First launch — "Findex can't be opened"?**
-> Findex is a free beta and isn't notarized by Apple yet, so macOS asks before the first run. It's safe — just open it the manual way once:
-> **right-click** (or Control-click) the app → **Open** → **Open**. After that it launches normally.
+---
 
 ## What is Findex?
 
-A file explorer for macOS built around a Rust search engine and a plugin system:
+Findex is a file explorer for macOS built around a dedicated Rust search engine and a
+plugin system. It lets you search, preview and organise local, archived, remote and
+mobile files from a single window.
 
-- **Instant search** over file names *and* contents — with typo tolerance, path search, and forgiveness for the wrong keyboard layout.
-- **Archives as folders** — browse, extract from, and add into `.zip` / `.tar` / `.7z` / `.rar` in place.
-- **Connect anywhere** — SFTP / FTP servers and Android (MTP), all in-app.
-- **Make it yours** — themes and sandboxed JavaScript plugins.
+## Features
 
-Requires **Apple Silicon** (M1 and later), macOS 12+.
+- **Instant search** over file names *and* contents, with typo tolerance, path-segment
+  matching and correction for text entered in the wrong keyboard layout.
+- **Archives as folders** — browse, preview, extract from, and add into `.zip`, `.tar`,
+  `.7z` and `.rar` in place. Documents, images, audio and video can be previewed inside an
+  archive without extracting it first.
+- **Remote and mobile storage** — connect to SFTP and FTP servers and to Android devices
+  (MTP), all browsed within the application, with nothing extra to install.
+- **Built-in previews** — images, audio and video (with custom playback controls), PDF,
+  Word and Excel documents, and text and source code — in a split view you can page through
+  with the arrow keys.
+- **Command palette** (`⌘K`) — jump to any file, folder or action with fuzzy matching and
+  your recent locations ranked first.
+- **Themes and plugins** — several built-in themes, including the new **Mint** theme, plus
+  sandboxed JavaScript plugins to extend the application.
+- **Dual panes, tabs** and off-thread processing keep the interface responsive.
+
+## Installation
+
+1. Download **[Findex-macos.dmg](https://github.com/serfom256/findex-downloads/releases/latest/download/Findex-macos.dmg)** and open it.
+2. Drag **Findex** into your **Applications** folder.
+3. On first launch, right-click the app → **Open** → **Open** again. This beta is not yet
+   notarized by Apple, so macOS asks for confirmation only this once.
+
+Alternatively, clear the quarantine flag from the terminal:
+
+```sh
+xattr -cr /Applications/Findex.app
+```
+
+## Requirements
+
+Apple Silicon (M1 and later), macOS 12 or newer.
 
 ## Links
 
-- 🌐 Website & live demo: <!-- TODO: your Cloudflare Pages / domain URL -->
-- This repository hosts only the downloads; it contains no source code.
+- 🌐 Website and live demo: https://findexapp.pages.dev
+- This repository hosts the downloads only; it contains no source code.
 
 ---
 
